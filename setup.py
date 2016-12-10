@@ -3,7 +3,7 @@ setup(
   name = 'unzipbomb',
   packages = ['unzipbomb'],
   version = '1.1',
-  description = 'A python module which defuses the zipbomb also can extarct all the zip files that are contained in a specific root folder',
+  description = 'A python module which defuses the zipbomb also can extarct all the zip files that are contained in a specific root folder, please read usage.pdf from github repo',
   author = 'Ankitesh Gupta, Saif Vazir',
   author_email = 'ankiteshguptas@gmail.com,ssv.saif@gmail.com',
   url = 'https://github.com/ankitesh97/unzipbomb',
