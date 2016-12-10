@@ -7,7 +7,7 @@ setup(
   author = 'Ankitesh Gupta, Saif Vazir',
   author_email = 'ankiteshguptas@gmail.com,sv.saif@gmail.com',
   url = 'https://github.com/ankitesh97/unzipbomb',
-  download_url = 'https://github.com/ankitesh97/unzipbomb/tarball/0.1',
+  download_url = 'https://github.com/ankitesh97/unzipbomb/tarball/v1.0',
   keywords = ['unzipbomb', 'zipbomb', 'extract', 'multiple zip files', 'zip bomb','unzip','unzip','zip','compress','decompress','extacrt multiple zip files'],
   classifiers = [],
 )
