@@ -1,0 +1,158 @@
+<html>
+<style type="text/css">
+H1{
+	font-size: 140%;
+	color: #366D9C;
+	margin: 0.7em 0 0.7em 0;
+}
+H2 {
+    font-size: 140%;
+    color: #366D9C;
+    margin: 0.7em 0 0.7em 0;
+}
+
+
+H3{
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
+    font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+    line-height: 1em;
+
+}
+H4{
+	color: black;
+	font-weight: bold;
+    font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+    line-height: 1em;
+
+}
+
+H1, H2, H5 {
+    font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+    font-weight: normal;
+    line-height: 1em;
+}
+</style>
+<h1>unzipbomb v1.1</h1>
+<p> A python module which defuses the zipbomb also can extract all the zip files that are contained in a specific root folder</p>
+<div>
+<h5 style="font-weight:bold;display:inline;">Author: </h5>
+<h5 style="display:inline;">Ankitesh Gupta, Saif Vazir</h5>
+</div>
+<div>
+<h5 style="font-weight:bold;display:inline;">Email: </h5>
+<h5 style="display:inline;">ankiteshguptas@gmail.com, ssv.saif@gmail.com</h5>
+</div>
+<div>
+<h5 style="font-weight:bold;display:inline;">Country: </h5>
+<h5 style="display:inline;">India</h5>
+</div>
+<p>note: only works in unix based operating system, will make it compatible with windows and other operating systems in further releases.</p>
+<p>Also, if you have any suggestions/correction please comment on github<p>
+
+<h2>What is it?</h2>
+<p>If you have a zip bomb to defuse, or if you have a directory containing many zip files that you want to extract this module will definitely help you out</p>
+
+<p>This is great for </p>
+<ul>
+	<li>defusing zip bombs</li>
+	<li>extracting multiple files</li>
+	<li>extracting nested files and folders</li>
+</ul>
+
+<h2>Usage</h2>
+<h3>Class Available:</h3>
+unzipbomb
+<h3>Functions Available:</h3>
+
+<ol>
+	<li>
+		<h4>showroot()</h4>
+		<p>
+			returns(string) the root folder path that was set
+		</p>
+	</li>
+
+	<li>
+		<h4>suppresstimer(option=True)</h4>
+		<p>
+			while the processing is done a timer is displayed in the output window, one can suppress that timer using this method .<br>
+			suppresstimer(False)    if you don’t want to see timer in the output window<br>
+			suppresstimer(True)    if you want to see the timer in the output window
+		</p>
+	</li>
+
+	<li>
+		<h4>showerrorlog()</h4>
+		<p>
+			returns the error log(list of dictionaries), that shows the errors that were occured while 	processing the decompression.
+		</p>
+	</li>
+
+	<li>
+		<h4>clearerrorlog()</h4>
+		<p>
+			clears the error log
+		</p>
+	</li>
+
+	<li>
+		<h4>showdestination()</h4>
+		<p>
+			returns(string) the destination folder that was set
+		</p>
+	</li>
+
+	<li>
+		<h4>showcount()</h4>
+		<p>
+			returns the number of extracted files
+		</p>
+	</li>
+
+	<li>
+		<h4>resetcount()</h4>
+		<p>
+			resets the count variable to 0
+		</p>
+	</li>
+
+	<li>
+		<h4>setrootfolder(rootfolder)</h4>
+		<p>
+		   set the root folder from where the extraction should begin<br>
+           arguments: rootfolder   A valid directory path(supplied as string)
+		</p>
+	</li>
+
+	<li>
+		<h4>setdestinationfolder(destination)</h4>
+		<p>
+			set the destination folder where the files should be extracted
+		</p>
+	</li>
+
+	<li>
+		<h4>unzipbomb()</h4>
+		<p>
+			begins the extraction
+		</p>
+	</li>
+
+</ol>
+
+<h2>Cookbook</h2>
+
+<p>from unzipbomb.unzipbomb import unzipbomb</p>
+
+extractobj = unzipbomb()<br>
+extractobj.setrootfoler(‘/home/path/to/root/folder’)<br>
+extractobj.setdestinationfolder(‘/home/path/to/destination/floder’)<br>
+extractobj.unzipbomb()
+
+<h2>Installation</h2>
+<p style="font-weight:bold;">pip install unzipbomb</p>
+
+
+</html>
